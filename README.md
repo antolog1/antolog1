@@ -22,18 +22,10 @@
 › frameworks change. the job doesn't: make it boring, make it reliable, ship it.
 ```
 
-<br>
-
-<img src="https://github-readme-stats.vercel.app/api?username=antolog1&show_icons=true&hide_border=true&hide_title=true&bg_color=0d0b0a&icon_color=c8b8a2&text_color=a39e96&ring_color=c8b8a2" height="140" />
-&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=antolog1&layout=compact&hide_border=true&hide_title=true&bg_color=0d0b0a&text_color=a39e96" height="140" />
-
-<br><br>
-
 <sub><i>the dark side of the moon is just the part without tests.</i></sub>
 
 <br><br>
 
-<a href="https://linkedin.com/in/volodymyr-pieknyi"><sub>linkedin</sub></a> &nbsp;·&nbsp; <sub>lviv</sub>
+<a href="https://www.linkedin.com/in/volodymyr-pieknyi-developer"><sub>linkedin</sub></a> &nbsp;·&nbsp; <sub>lviv</sub>
 
 </div>
