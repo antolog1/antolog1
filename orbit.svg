@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360">
+  <defs>
+    <radialGradient id="mf" cx="40%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#e6e0d6"/>
+      <stop offset="100%" stop-color="#8b8378"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c8b8a2" stop-opacity=".25"/>
+      <stop offset="100%" stop-color="#c8b8a2" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="mc"><circle cx="450" cy="180" r="36"/></clipPath>
+    <path id="inner" d="M280,180 a170,55 0 1,0 340,0 a170,55 0 1,0 -340,0"/>
+    <path id="outer" d="M120,180 a330,120 0 1,0 660,0 a330,120 0 1,0 -660,0"/>
+  </defs>
+
+  <style>
+    .ring { fill: none; stroke: #2a2522; stroke-width: 1; stroke-dasharray: 2 6; }
+    .t1 { fill: #d8d2c8; font: 500 15px 'SFMono-Regular', Consolas, Menlo, monospace; text-anchor: middle; }
+    .t2 { fill: #8b7765; font: 400 13px 'SFMono-Regular', Consolas, Menlo, monospace; text-anchor: middle; }
+    .cap { fill: #5e544b; font: 400 12px 'SFMono-Regular', Consolas, Menlo, monospace; letter-spacing: 3px; text-anchor: middle; }
+    .glow { animation: breathe 6s ease-in-out infinite; transform-origin: 450px 180px; }
+    @keyframes breathe { 0%,100% { opacity: .6; transform: scale(1); } 50% { opacity: 1; transform: scale(1.08); } }
+  </style>
+
+  <rect width="900" height="360" rx="14" fill="#0d0b0a"/>
+
+  <use href="#outer" class="ring"/>
+  <use href="#inner" class="ring"/>
+
+  <circle class="glow" cx="450" cy="180" r="90" fill="url(#glow)"/>
+  <circle cx="450" cy="180" r="36" fill="url(#mf)"/>
+  <circle cx="432" cy="180" r="37" fill="#0d0b0a" opacity=".9" clip-path="url(#mc)"/>
+
+  <!-- inner orbit: core -->
+  <text class="t1" y="5">react<animateMotion dur="20s" repeatCount="indefinite" begin="0s"><mpath href="#inner"/></animateMotion></text>
+  <text class="t1" y="5">node.js<animateMotion dur="20s" repeatCount="indefinite" begin="-5s"><mpath href="#inner"/></animateMotion></text>
+  <text class="t1" y="5">typescript<animateMotion dur="20s" repeatCount="indefinite" begin="-10s"><mpath href="#inner"/></animateMotion></text>
+  <text class="t1" y="5">next.js<animateMotion dur="20s" repeatCount="indefinite" begin="-15s"><mpath href="#inner"/></animateMotion></text>
+
+  <!-- outer orbit: everything around it -->
+  <text class="t2" y="4">postgres<animateMotion dur="36s" repeatCount="indefinite" begin="0s"><mpath href="#outer"/></animateMotion></text>
+  <text class="t2" y="4">mongodb<animateMotion dur="36s" repeatCount="indefinite" begin="-6s"><mpath href="#outer"/></animateMotion></text>
+  <text class="t2" y="4">aws<animateMotion dur="36s" repeatCount="indefinite" begin="-12s"><mpath href="#outer"/></animateMotion></text>
+  <text class="t2" y="4">docker<animateMotion dur="36s" repeatCount="indefinite" begin="-18s"><mpath href="#outer"/></animateMotion></text>
+  <text class="t2" y="4">graphql<animateMotion dur="36s" repeatCount="indefinite" begin="-24s"><mpath href="#outer"/></animateMotion></text>
+  <text class="t2" y="4">react native<animateMotion dur="36s" repeatCount="indefinite" begin="-30s"><mpath href="#outer"/></animateMotion></text>
+
+  <text class="cap" x="450" y="345">orbit</text>
+</svg>

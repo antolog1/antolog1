@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" width="900" height="190">
+  <defs>
+    <radialGradient id="mf" cx="40%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#e6e0d6"/>
+      <stop offset="100%" stop-color="#8b8378"/>
+    </radialGradient>
+    <clipPath id="c1"><circle cx="130" cy="80" r="26"/></clipPath>
+    <clipPath id="c2"><circle cx="290" cy="80" r="26"/></clipPath>
+    <clipPath id="c3"><circle cx="450" cy="80" r="26"/></clipPath>
+    <clipPath id="c4"><circle cx="610" cy="80" r="26"/></clipPath>
+    <clipPath id="c5"><circle cx="770" cy="80" r="26"/></clipPath>
+  </defs>
+
+  <style>
+    .path { stroke: #3a332e; stroke-width: 1.5; stroke-dasharray: 4 8; fill: none; animation: flow 3s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -48; } }
+
+    .ph { opacity: .28; animation: light 7s ease-in-out infinite; }
+    .p2 { animation-delay: 1s; } .p3 { animation-delay: 2s; } .p4 { animation-delay: 3s; } .p5 { animation-delay: 4s; }
+    @keyframes light { 0%,100% { opacity: .28; } 12% { opacity: 1; } 60% { opacity: 1; } 75% { opacity: .28; } }
+
+    .lbl { fill: #c8b8a2; font: 400 14px 'SFMono-Regular', Consolas, Menlo, monospace; letter-spacing: 2px; text-anchor: middle; }
+    .cap { fill: #5e544b; font: 400 12px 'SFMono-Regular', Consolas, Menlo, monospace; letter-spacing: 3px; text-anchor: middle; }
+  </style>
+
+  <rect width="900" height="190" rx="14" fill="#0d0b0a"/>
+  <line class="path" x1="160" y1="80" x2="740" y2="80"/>
+
+  <g class="ph">
+    <circle cx="130" cy="80" r="26" fill="url(#mf)"/>
+    <circle cx="130" cy="80" r="27" fill="#0d0b0a" clip-path="url(#c1)"/>
+    <circle cx="130" cy="80" r="26" fill="none" stroke="#5e544b" stroke-width="1"/>
+    <text class="lbl" x="130" y="136">idea</text>
+  </g>
+  <g class="ph p2">
+    <circle cx="290" cy="80" r="26" fill="url(#mf)"/>
+    <circle cx="272" cy="80" r="27" fill="#0d0b0a" clip-path="url(#c2)"/>
+    <text class="lbl" x="290" y="136">schema</text>
+  </g>
+  <g class="ph p3">
+    <circle cx="450" cy="80" r="26" fill="url(#mf)"/>
+    <rect x="422" y="52" width="28" height="56" fill="#0d0b0a" clip-path="url(#c3)"/>
+    <text class="lbl" x="450" y="136">api</text>
+  </g>
+  <g class="ph p4">
+    <circle cx="610" cy="80" r="26" fill="url(#mf)"/>
+    <circle cx="566" cy="80" r="27" fill="#0d0b0a" clip-path="url(#c4)"/>
+    <text class="lbl" x="610" y="136">interface</text>
+  </g>
+  <g class="ph p5">
+    <circle cx="770" cy="80" r="26" fill="url(#mf)"/>
+    <text class="lbl" x="770" y="136">production</text>
+  </g>
+
+  <text class="cap" x="450" y="172">phases of a feature</text>
+</svg>
